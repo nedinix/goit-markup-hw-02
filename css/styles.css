@@ -1,0 +1,123 @@
+/* 
+primary-color: #ffffff;
+secondary-color: #2E2F42 ;
+header-text-color: #2E2F42 ;
+main-text-color: #434455 ;
+light-text-color: #F4F4FD;
+light-border-text: #E7E9FC;
+accent-color: #4D5AE5; 
+*/
+
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #2E2F42;
+    --header-text-color: #2E2F42;
+    --text-color: #434455;
+    --light-text-color: #F4F4FD;
+    --light-border-text: #E7E9FC;
+    --accent-color: #4D5AE5;
+}
+
+/* 
+* {
+    margin: 0 auto;
+}
+*/
+
+body {
+    background-color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    color: var(--text-color);
+    font-size: 16px;
+    /* line-height: 1.5; */
+    letter-spacing: 0.02em;
+}
+
+.logo,
+.logo.header {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    line-height: 1.3;
+    letter-spacing: 0.03em;
+    color: var(--header-text-color);
+}
+
+.logo.footer {
+    color: var(--light-text-color);
+}
+
+.logo-accent {
+    color: var(--accent-color);
+}
+
+.link {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.link:hover,
+.link:focus {
+    color: var(--accent-color);
+}
+
+.nav-link {
+    color: var(--header-text-color);
+}
+
+
+.navigation,
+.list {
+    list-style-type: none;
+}
+
+.hero {
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.hero > h1 {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 56px;
+    line-height: 1.07;
+}
+
+.content-block h2 {
+    color: var(--header-text-color);
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 1.11;   
+    text-align: center;
+}
+
+.content-block.grey {
+    background-color: var(--light-text-color);
+}
+
+.list.team{
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.order-button {
+    cursor: pointer;
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+    border-style: none;
+    border-radius: 4px;
+    width: 170px;
+    height: 51px;
+}
+
+.order-button:hover,
+.order-button:focus {
+    background-color: var(--primary-color);
+    color: var(--accent-color);
+}
+
+
+.footer {
+    background-color: var(--secondary-color);
+    color: var(--light-border-text);
+}
