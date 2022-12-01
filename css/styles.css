@@ -68,7 +68,6 @@ body {
 /* headers */
 .header {
     color: var(--secondary-color);
-    font-weight: 600;
 }
 
 .section-header {
@@ -77,9 +76,8 @@ body {
     text-align: center;
 }
 
-.list h3 {
+.list.header {
     font-size: 20px;
-    font-weight: 600;
     line-height: 1.2;
 }
 
@@ -95,7 +93,7 @@ body {
     text-align: center;
 }
 
-.hero > h1 {
+.hero.header {
     color: var(--primary-color);
     font-weight: 600;
     font-size: 56px;
@@ -115,18 +113,39 @@ body {
     background-color: var(--secondary-text-color);
 }
 
+
+/* list classes */
 .list.team{
     background-color: var(--primary-color);
     text-align: center;
 }
 
 .team-list {
-    background-color: var(--primary-color);
     text-align: center;
 }
 
+.list-box {
+    background-color: var(--primary-color);
+}
 
-/* button */
+.list-box > h3 {
+    color: var(--text-color);
+}
+
+/* portfolio gallery */
+
+.portfolio-item {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.portfolio-item:hover,
+.portfolio-item:focus {
+    color: var(--accent-color);
+}
+
+
+/* buttons */
 .order-button {
     cursor: pointer;
     background-color: var(--accent-color);
@@ -141,6 +160,17 @@ body {
 .order-button:focus {
     background-color: var(--primary-color);
     color: var(--accent-color);
+}
+
+.filter-button {
+    color: var(--accent-color);
+    background-color: var(--secondary-text-color);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+    color: var(--secondary-color);
+    background-color: var(--accent-color);
 }
 
 /* footer */
