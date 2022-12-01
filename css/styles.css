@@ -1,20 +1,18 @@
 /* 
-primary-color: #ffffff;
-secondary-color: #2E2F42 ;
-header-text-color: #2E2F42 ;
-main-text-color: #434455 ;
-light-text-color: #F4F4FD;
-light-border-text: #E7E9FC;
-accent-color: #4D5AE5; 
+--primary-color: #ffffff;
+--secondary-color: #2E2F42;
+--text-color: #434455;
+--secondary-text-color: #F4F4FD;
+--third-text-color: #E7E9FC;
+--accent-color: #4D5AE5;
 */
 
 :root {
     --primary-color: #ffffff;
     --secondary-color: #2E2F42;
-    --header-text-color: #2E2F42;
     --text-color: #434455;
-    --light-text-color: #F4F4FD;
-    --light-border-text: #E7E9FC;
+    --secondary-text-color: #F4F4FD;
+    --third-text-color: #E7E9FC;
     --accent-color: #4D5AE5;
 }
 
@@ -29,18 +27,18 @@ body {
     font-family: 'Roboto', sans-serif;
     color: var(--text-color);
     font-size: 16px;
-    /* line-height: 1.5; */
+    line-height: 1.5;
     letter-spacing: 0.02em;
 }
 
-.logo,
-.logo.header {
+/* logo style */
+.logo {
     font-family: 'Raleway', sans-serif;
     text-transform: uppercase;
     font-weight: 900;
     line-height: 1.3;
     letter-spacing: 0.03em;
-    color: var(--header-text-color);
+    color: var(--secondary-color);
 }
 
 .logo.footer {
@@ -50,6 +48,8 @@ body {
 .logo-accent {
     color: var(--accent-color);
 }
+
+/* link */
 
 .link {
     text-decoration: none;
@@ -62,15 +62,34 @@ body {
 }
 
 .nav-link {
-    color: var(--header-text-color);
+    color: var(--secondary-color);
 }
 
+/* headers */
+.header {
+    color: var(--secondary-color);
+    font-weight: 600;
+}
 
+.section-header {
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+}
+
+.list h3 {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* nav menu */
 .navigation,
 .list {
     list-style-type: none;
 }
 
+/* hero section */
 .hero {
     background-color: var(--secondary-color);
     text-align: center;
@@ -83,8 +102,9 @@ body {
     line-height: 1.07;
 }
 
+/* content section */
 .content-block h2 {
-    color: var(--header-text-color);
+    color: var(--secondary-color);
     font-weight: 600;
     font-size: 36px;
     line-height: 1.11;   
@@ -92,7 +112,7 @@ body {
 }
 
 .content-block.grey {
-    background-color: var(--light-text-color);
+    background-color: var(--secondary-text-color);
 }
 
 .list.team{
@@ -100,6 +120,13 @@ body {
     text-align: center;
 }
 
+.team-list {
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+
+/* button */
 .order-button {
     cursor: pointer;
     background-color: var(--accent-color);
@@ -116,8 +143,8 @@ body {
     color: var(--accent-color);
 }
 
-
+/* footer */
 .footer {
     background-color: var(--secondary-color);
-    color: var(--light-border-text);
+    color: var(--third-text-color);
 }
