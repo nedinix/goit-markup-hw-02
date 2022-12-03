@@ -31,6 +31,8 @@ body {
     letter-spacing: 0.02em;
 }
 
+
+
 /* logo style */
 
 .logo {
@@ -50,6 +52,7 @@ body {
 .logo-accent {
     color: var(--accent-color);
 }
+
 
 
 /* link */
@@ -75,7 +78,6 @@ body {
 .contact.link:focus {
     color: var(--accent-color);
 }
-
 
 
 
@@ -110,12 +112,14 @@ body {
 }
 
 
+
 /* nav menu */
 
 .navigation,
 .list {
     list-style-type: none;
 }
+
 
 
 /* hero section */
@@ -133,6 +137,7 @@ body {
 }
 
 
+
 /* content section */
 
 .section-header {
@@ -146,6 +151,7 @@ body {
 .content-block.grey {
     background-color: var(--secondary-text-color);
 }
+
 
 
 /* list classes */
@@ -164,12 +170,15 @@ body {
 }
 
 
+
 /* portfolio gallery */
 
 .portfolio-item {
     text-decoration: none;
     color: var(--text-color);
 }
+
+
 
 /* buttons */
 
@@ -198,7 +207,8 @@ body {
 .filter-button {
     color: var(--accent-color);
     background-color: var(--secondary-text-color);
-    border-style: none;
+    border: 1px solid var(--secondary-accent-color);
+    border-radius: 4px;
     cursor: pointer;
     font-family: inherit;
     font-size: 16px;
@@ -209,7 +219,9 @@ body {
 .filter-button:focus {
     color: var(--secondary-text-color);
     background-color: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
+
 
 
 /* footer */
